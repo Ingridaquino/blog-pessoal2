@@ -14,13 +14,11 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-final
-class UsuarioRepositoryTeste {
+public class UsuarioRepositoryTeste {
 
-    @Autowired
+        @Autowired
     private UsuarioRepository usuarioRepository;
 
     @BeforeAll
